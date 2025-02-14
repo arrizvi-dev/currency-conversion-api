@@ -91,7 +91,7 @@ The server will start on `http://localhost:5002`
 ## Assumptions
 
 - The API uses `https://v6.exchangerate-api.com/` as the exchange rate provider.
-- The cache layer (Redis) has been removed for simplicity.
+- Rate limiting allows 50 requests per 15 minutes per IP.
 - The API only supports conversion between currencies available in the exchange rate provider.
 
 ## Logging
